@@ -1,17 +1,20 @@
 const express = require('express');
-const APIRoutes = require('./routes/APIRoutes');
 const htmlRoutes = require('./routes/htmlRoutes');
+const APIRoutes = require('./routes/apiRoutes');
 
 // Initialize the app and create a port
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = app.set('port', process.env.PORT || 3001);
 
-// Set up body parsing, static, and route middleware
-app.use(express.json());
+// Below is middleware inclusing bodyparsing, static, and routes
+//When extended property is set to true, the URL-encoded data will be parsed with the qs library.
 app.use(express.urlencoded({ extended: true }));
+//below allows data to be returned as a string
+app.use(express.json());
+//Below alllows anything in the public folder to remain static
 app.use(express.static('public'));
-app.use('/api', APIRoutes);
 app.use('/', htmlRoutes);
+app.use('/api', APIRoutes);
 
-// Start the server on the port
-app.listen(PORT, () => console.log(`Listening to the PORT: ${PORT}`));
+// Start the server by listening on the port
+app.listen(PORT, () => console.log(`Listening on the PORT: ${PORT}`));
