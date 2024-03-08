@@ -4,7 +4,8 @@ const APIRoutes = require('./routes/apiRoutes');
 
 // Initialize the app and create a port
 const app = express();
-const PORT = app.set('port', process.env.PORT || 3001);
+const PORT = 3001
+//const PORT = app.set('port', process.env.PORT || 3001);
 
 // Below is middleware inclusing bodyparsing, static, and routes
 //When extended property is set to true, the URL-encoded data will be parsed with the qs library.

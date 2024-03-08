@@ -1,12 +1,12 @@
 # Note-taker
 
 ## Description 
-This application is a note taking app which is deployed in heroku and uses an express js backend. 
+This application is a note taking app which uses an express js backend. 
 
 ## Intallation 
-Express js: 
-Node js: 
-Heroku: 
+Express js: https://expressjs.com/
+
+Node js version 20.11.1: https://nodejs.org/en 
 
 ## Demo 
 

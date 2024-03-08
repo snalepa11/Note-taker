@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const save = require('../db/store');
+const save = require('../db/db.json');
 
 // GET "/api/notes" responds with all notes from the database
 router.get('/notes', (req, res) => {
@@ -22,8 +22,7 @@ router.post('/notes', (req, res) => {
 router.delete('/notes/:id', (req, res) => {
   save
     .removeNote(req.params.id)
-    .then(() => res.json({ ok: true }))
-    .catch((err) => res.status(500).json(err));
+    .then(() => res.json({ ok: true }));
 });
 
 module.exports = router;
