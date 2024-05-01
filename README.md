@@ -15,8 +15,9 @@ Node js version 20.11.1: https://nodejs.org/en
 Render: https://render.com/
 
 ## Screenshots
-<img width="1470" alt="Note-Taker 1" src="https://github.com/snalepa11/Note-taker/assets/131091044/f61fc984-b4a5-484e-9ea9-3c990df37d87">
-<img width="1470" alt="Note taker 2" src="https://github.com/snalepa11/Note-taker/assets/131091044/dc11d69f-a73c-4e82-a40d-1edd417a7a08">
+<img width="1470" alt="Note-Taker 1" src="https://github.com/snalepa11/Note-taker/assets/131091044/128a38c7-f63b-4952-b784-cc7ac096e09a">
+
+<img width="1470" alt="Note taker 2" src="https://github.com/snalepa11/Note-taker/assets/131091044/c2f6fb9a-4c1b-4946-a231-065fdc5d1c54">
 
 
 ## Credit
