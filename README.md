@@ -16,6 +16,7 @@ Render: https://render.com/
 
 ## Screenshots
 <img width="1470" alt="Note-Taker 1" src="https://github.com/snalepa11/Note-taker/assets/131091044/00e8d079-15dd-420e-a592-f56cc69ec081">
+<img width="1462" alt="Note taker 2" src="https://github.com/snalepa11/Note-taker/assets/131091044/455673d5-cecf-46d8-a508-e1c9922e37b2">
 
 ## Links
 GitHub Repository: https://github.com/snalepa11/Note-taker
