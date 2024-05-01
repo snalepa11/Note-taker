@@ -15,7 +15,8 @@ Node js version 20.11.1: https://nodejs.org/en
 Render: https://render.com/
 
 ## Demo 
-![Uploading image.png…]()
+<img width="1470" alt="Note-Taker 1" src="https://github.com/snalepa11/Note-taker/assets/131091044/f61fc984-b4a5-484e-9ea9-3c990df37d87">
+
 
 ## Credit
 Starter Code was provided by Northwestern Full Stack Coding Bootcamp
