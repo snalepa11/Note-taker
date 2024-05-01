@@ -1,14 +1,19 @@
 const router = require('express').Router();
 const save = require('../db/db.json');
-
+const fs = require('fs')
+console.log(save)
 // GET "/api/notes" responds with all notes from the database
+
 router.get('/notes', (req, res) => {
-  save
-    .getNotes()
-    .then((notes) => {
-      return res.json(notes);
-    })
-    .catch((err) => res.status(500).json(err));
+  fs.readFile('./db/db.json',(err,results) => { 
+
+  })
+  // save
+  //   .getNotes()
+  //   .then((notes) => {
+  //     return res.json(notes);
+  //   })
+  //   .catch((err) => res.status(500).json(err));
 });
 
 router.post('/notes', (req, res) => {
