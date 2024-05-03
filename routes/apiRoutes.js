@@ -6,7 +6,9 @@ console.log(save)
 
 router.get('/notes', (req, res) => {
   fs.readFile('./db/db.json',(err,results) => { 
-
+    if(err){
+      throw err
+    } res.json(JSON.parse(results))
   })
   // save
   //   .getNotes()
@@ -17,10 +19,18 @@ router.get('/notes', (req, res) => {
 });
 
 router.post('/notes', (req, res) => {
-  save
-    .addNote(req.body)
-    .then((note) => res.json(note))
-    .catch((err) => res.status(500).json(err));
+  console.log(req.body);
+  save.push(req.body)
+  fs.writeFile('./db/db.json', JSON.stringify(save), (err) => {
+    if(err){
+      throw err
+    } res.json(save)
+  })
+
+  // save
+  //   .addNote(req.body)
+  //   .then((note) => res.json(note))
+  //   .catch((err) => res.status(500).json(err));
 });
 
 // DELETE "/api/notes" deletes the note with an id equal to req.params.id

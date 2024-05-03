@@ -14,8 +14,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 //Below alllows anything in the public folder to remain static
 app.use(express.static('public'));
-app.use('/', htmlRoutes);
 app.use('/api', APIRoutes);
+app.use('/', htmlRoutes);
 
 // Start the server by listening on the port
 app.listen(PORT, () => console.log(`Listening on the PORT: ${PORT}`));
